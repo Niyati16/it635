@@ -1,0 +1,20 @@
+ubuntu@ip-172-31-28-249:~$ mongo ds117250.mlab.com:17250/it-635 -u nbm5 -p qwerty
+MongoDB shell version v3.6.4
+connecting to: mongodb://ds117250.mlab.com:17250/it-635
+MongoDB server version: 3.4.14
+WARNING: shell and server versions do not match
+rs-ds117250:PRIMARY> use it-635
+switched to db it-635
+rs-ds117250:PRIMARY> show collections
+LOGIN
+objectlabs-system
+objectlabs-system.admin.collections
+system.indexes
+rs-ds117250:PRIMARY> db.LOGIN.find()
+{ "_id" : ObjectId("5aef9baf42908b8ebdf39170"), "id" : 21, "read_id" : 0, "log_name" : "lisa", "log_password" : "lisa", "type" : "L" }
+{ "_id" : ObjectId("5aef9bf642908b8ebdf39171"), "id" : "22", "read_id" : "0", "log_name" : "joe", "log_password" : "joe", "type" : "L" }
+{ "_id" : ObjectId("5aef9c0842908b8ebdf39172"), "id" : "1", "read_id" : "1", "log_name" : "beth", "log_password" : "beth", "type" : "R" }
+{ "_id" : ObjectId("5aef9c1942908b8ebdf39173"), "id" : "2", "read_id" : "2", "log_name" : "mike", "log_password" : "mike", "type" : "R" }
+{ "_id" : ObjectId("5aef9c2842908b8ebdf39174"), "id" : "3", "read_id" : "3", "log_name" : "david", "log_password" : "david001", "type" : "R" }
+{ "_id" : ObjectId("5aef9c3642908b8ebdf39175"), "id" : "4", "read_id" : "4", "log_name" : "rebecca", "log_password" : "rebe123", "type" : "R" }
+rs-ds117250:PRIMARY>
